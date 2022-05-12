@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/contact.css">
-        <script src="./js/script.js"></script>
+        <script src="./js/contact.js"></script>
     </head>
     <body>
         <nav class="navbar" id="navigation">
@@ -17,17 +17,17 @@
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="property.html">Property</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul> 
         </nav>
         <section class="form-section">
             <div class="box">
-                <form name="myForm" action="#" method="post" onsubmit="return validateForm()">
-                   Name: <input type="text" name="fname" placeholder="Full Name" required><br><br>
-                   Email: <input type="email" name="email" placeholder="Email Address" required><br><br>
-                   Message: <textarea name="message" id="message" placeholder="Message"></textarea><br><br>
-                  <button type="submit" class="btn">Submit</button>
-                </form>
+                <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+                    Name: <input type="text" name="fname" id="fullname"><br><br>
+                   Email: <input type="email" name="email" id="email"><br><br>
+                  Message: <textarea name="Message" id="Message"></textarea><br><br>
+                    <input class="btn" type="submit" value="Submit">
+                </form>  
             </div>
         </section>
 

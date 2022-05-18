@@ -22,12 +22,12 @@
         </nav>
         <section class="form-section">
             <div class="box">
-                <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
-                    Name: <input type="text" name="fname" id="fullname"><br><br>
+                <form name="myForm" id="myform" action="#" onsubmit="return validateForm()" method="post">
+                    Name: <input type="text" name="fname" id="fname"><br><br>
                    Email: <input type="email" name="email" id="email"><br><br>
-                  Message: <textarea name="Message" id="Message"></textarea><br><br>
                     <input class="btn" type="submit" value="Submit">
-                </form>  
+                    <input type="button" class="btn" onclick="myReset()" value="Reset form">
+                </form>   
             </div>
         </section>
 

@@ -1,22 +1,33 @@
-function validateForm(){
-    var name = document.getElementById(fullname).value;
-    var email = document.getElementById(email).value;
-    var message = document.getElementById(message).value;
+// Calling validationForm to validate the user input with the condition and return alert .
 
-    if (name==""){
-        alert("Name must be entered.");
-        return false;
+function validateForm() {
+    var name = document.getElementById("fname").value;
+    var email=document.getElementById("email").value;
+   
+    if (name == "") {
+      alert("Please enter you full name.");
+      return false;
     }
-
-     if(email==""){
-         alert("Please enter your email address");
-     }
-     else{
-         var regex = /^\S+@\S+\.S+$/;
-         if (regex.test(email) == false){
-             alert("Please enter valid email address.")
+   else if ( email == "" || email == "email"){
+    //    creating the condition to check the input email address and validate with the below regex formate.
+         var emailAddress = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
+         if (email.match(emailAddress)){
+             return true;
          }
+         else {
+             alert("Valid email address must be filled.");
+             return  false;
+         }
+   }
+     
+    
+     alert("Thank you! Your form has been submitted. We will get back to you as soon as possible.");
+   
+  }
+  
 
-     }
-     alert("Thank you your form has been submitted. we will get back to you asap.");
-}
+    // Calling onrest fuction to reset the form and fill it again.
+
+    function myReset() {
+      document.getElementById("myform").reset();
+    }

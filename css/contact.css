@@ -138,5 +138,8 @@ footer{
     padding: 10px;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
    
   }

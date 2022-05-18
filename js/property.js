@@ -1,3 +1,5 @@
+// Calling validationForm to validate the user input with the condition and return alert .
+
 function validateForm() {
     var name = document.getElementById("fname").value;
     var phone=document.getElementById("phone").value;
@@ -5,10 +7,10 @@ function validateForm() {
     var price=document.getElementById("price").value;
    
     if (name == "") {
-      alert("name must be entered");
+      alert("Please enter you full name.");
       return false;
     }
-   else if (phone == "phone"){
+   else if ( phone == "" || phone == "phone"){
     //    creating the condition to check the input phone number must be number and ten digit long.
          var phoneNumber = /^\d{10}$/;
          if (phone.match(phoneNumber)){
@@ -38,4 +40,10 @@ function validateForm() {
   function myName() {
       var name = document.getElementById("fname");
       name.value = name.value.toUpperCase();
+    }
+
+    // Calling onrest fuction to reset the form and fill it again.
+
+    function myReset() {
+      document.getElementById("myform").reset();
     }

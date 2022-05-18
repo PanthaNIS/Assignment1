@@ -60,15 +60,24 @@
   .company-logo a:hover{
     color:rgb(234, 191, 19) ;
   }
+
+  /* designing the information section */
+
+  .information{
+    position: absolute;
+    top:9%;
+    margin-left: 10px;
+    font-family: 'Lato', sans-serif;
+  }
   
   /* Designing the form section */
 
   .box{
     width: 40%;
-    height: 400px;
+    height: 350px;
     background-color: lightblue;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 10px;
@@ -76,7 +85,7 @@
   }
 
   form{
-    margin-top:3em;
+    margin-top:1.5em;
     font-size: 20px;
     font-family:'Lato', sans-serif ;
 

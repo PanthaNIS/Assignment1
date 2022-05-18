@@ -20,6 +20,7 @@
      z-index: 99;
      
    }
+   /* design of the company logo with link attribute and listing items */
    .company-logo a{
      color: #000;
      text-decoration: none;
@@ -60,6 +61,17 @@
   .company-logo a:hover{
     color:rgb(234, 191, 19) ;
   }
+
+  /* designing the information section */
+
+  .information{
+    position: absolute;
+    top:9%;
+    margin-left: 10px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+
   
   /* Designing the form section */
 
@@ -68,17 +80,19 @@
     height: 400px;
     background-color: lightblue;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 10px;
     text-align: center;
+    
   }
 
   form{
     margin-top:2em;
     font-size: 20px;
     font-family:'Lato', sans-serif ;
+    margin-bottom: 6em;
 
   }
 
@@ -119,11 +133,7 @@
     width: 6em;
   }
 
-
-
-  /* CSS for designing footer section */
-
-footer{
+  footer{
     background-color: rgb(234, 191, 19);
     color: black;
     font-size: 30px;
@@ -133,6 +143,9 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-
    
   }
+
+
+
+

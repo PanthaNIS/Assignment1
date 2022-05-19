@@ -4,7 +4,7 @@ function validateForm() {
     var name = document.getElementById("fname").value;
     var email=document.getElementById("email").value;
    
-    if (name == "") {
+    if (name == "" || name == "name") {
       alert("Please enter you full name.");
       return false;
     }
@@ -24,7 +24,28 @@ function validateForm() {
      alert("Thank you! Your form has been submitted. We will get back to you as soon as possible.");
    
   }
+
+  //calling onclick function to to display the DOM 
+
+  function create(){
+    if (email == true ){
+    document.getElementById("test").innerHTML="Hi there, your form has been successfully submitted";
+    document.getElementById("test").style.color="green";
+    return true
+    }
+    else{
+    document.getElementById("test").innerHTML="Hi there, your form has not been submitted";
+    document.getElementById("test").style.color="red";
+    }
   
+}
+  
+  
+  // Calling onblur function in name input of the form to transform the text to uppercase.
+  function myName() {
+    var name = document.getElementById("fname");
+    name.value = name.value.toUpperCase();
+  }
 
     // Calling onrest fuction to reset the form and fill it again.
 

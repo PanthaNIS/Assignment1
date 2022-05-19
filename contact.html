@@ -31,9 +31,16 @@
                 <form name="myForm" id="myform" action="#" onsubmit="return validateForm()" method="post">
                     Name: <input type="text" name="fname" id="fname" onblur="myName()"><br><br>
                    Email: <input type="email" name="email" id="email"><br><br>
-                  Message <textarea name="message" id="message"></textarea><br><br>
-                    <input class="btn" type="submit" value="Submit" onclick="create()">
-                    <input type="button" class="btn" onclick="myReset()" value="Reset form">
+                  Message: <textarea name="message" id="message"></textarea><br><br>
+                  <!-- Implement the random math to show the random value just beside add text -->
+                  Add:<script>var a=parseInt(Math.random()*5 + 1);
+                    var b=parseInt(Math.random()*5 + 1);
+                    document.write (" " + a  + "");
+                    document.write (" + " + "");
+                    document.write (" " + b + " " +"=");
+                    </script> <input type="text" name="sum" id="sum"><br/><br>
+                    <input id="button" class="btn" type="submit" value="Submit" onclick="create()">
+                    <input type="button" class="btn" onclick="myReset()" value="Reset form"><br><br>
                     <p id="test"></p>
                 </form>   
             </div>
